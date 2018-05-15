@@ -1,0 +1,501 @@
+/* COLOR REFERENCE
+
+light blue: #D0F0FD
+med blue: #004A65
+dark blue: #2C3E50
+light green: #BBE979
+dark green: #557E14
+light gray: #D5DADC
+dark gray: #5C696F
+*/
+
+
+/************** Universal Styles **************/
+
+body {
+    font-family: 'EB Garamond', serif;
+}
+
+section {
+    padding: 6rem 0;
+}
+
+.bg-light {
+    background-color: #D0F0FD !important;
+}
+
+.bg-md-dark {
+    background-color: #004A65 !important;
+}
+
+.bg-dark {
+    background-color: #013A50 !important;
+}
+
+
+/*Buttons*/
+
+.btn {
+    background-color: #D0F0FD;
+    border-color: #D0F0FD;
+    color: #013A50 !important;
+    font-family: 'Poppins';
+    border-width: 2px;
+}
+
+.btn:hover,
+.btn:focus,
+.btn:active {
+    background-color: #bbe979;
+    border-color: #bbe979;
+}
+
+
+/*Headings*/
+
+h1,
+h2,
+h3,
+h4,
+nav li {
+    font-weight: 700;
+    font-family: 'Poppins';
+}
+
+h4 {
+    font-size: 1rem;
+}
+
+.section-heading {
+    text-align: center;
+}
+
+section h2 {
+    font-size: 2.25rem;
+    line-height: 2rem;
+}
+
+.section-heading span {
+    display: inline-block;
+    position: relative;
+    margin: auto 0;
+}
+
+.section-heading span:before,
+.section-heading span:after {
+    content: "";
+    position: absolute;
+    height: 5px;
+    border-top: 2px solid;
+    top: 50%;
+    width: 35vw;
+}
+
+.section-heading span:before {
+    right: 100%;
+    margin-right: 15px;
+}
+
+.section-heading span:after {
+    left: 100%;
+    margin-left: 15px;
+}
+
+@media (max-width: 650px) {
+    .section-heading span:before,
+    .section-heading span:after {
+        width: 20vw;
+    }
+}
+
+@media (min-width: 992px) {
+    section h2 {
+        font-size: 3rem;
+        line-height: 2.5rem;
+    }
+}
+
+section h3 {
+    font-size: 1.5rem;
+}
+
+h3 span:before,
+h3 span:after {
+    width: 4vw !important;
+}
+
+
+/* Navbar */
+
+#mainNav {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-weight: 700;
+    font-family: 'Montserrat';
+}
+
+#mainNav .navbar-brand {
+    color: beige;
+}
+
+#mainNav .navbar-nav {
+    margin-top: 1rem;
+    letter-spacing: 0.0625rem;
+}
+
+#mainNav .navbar-nav li.nav-item a.nav-link {
+    color: white;
+}
+
+#mainNav .navbar-nav li.nav-item a.nav-link:hover,
+#mainNav .navbar-nav li.nav-item a.nav-link:active,
+#mainNav .navbar-nav li.nav-item a.nav-link:focus,
+#mainNav .navbar-nav li.nav-item a.nav-link.active {
+    color: #D0F0FD;
+}
+
+#mainNav .navbar-toggler {
+    font-size: 80%;
+    padding: 0.8rem;
+}
+
+@media (min-width: 992px) {
+    #mainNav {
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+        -webkit-transition: padding-top 0.3s, padding-bottom 0.3s;
+        -moz-transition: padding-top 0.3s, padding-bottom 0.3s;
+        transition: padding-top 0.3s, padding-bottom 0.3s;
+    }
+    #mainNav .navbar-brand {
+        font-size: 2em;
+        -webkit-transition: font-size 0.3s;
+        -moz-transition: font-size 0.3s;
+        transition: font-size 0.3s;
+    }
+    #mainNav .navbar-nav {
+        margin-top: 0;
+    }
+    #mainNav.navbar-shrink {
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+    }
+    #mainNav.navbar-shrink .navbar-brand {
+        font-size: 1.5em;
+    }
+}
+
+
+/************** Header section **************/
+
+header {
+    background-image: url(../img/header-background.jpg);
+    background-position: center;
+    height: 110vh;
+}
+
+header.masthead {
+    padding-top: calc(6rem + 72px);
+    padding-bottom: 6rem;
+    left: 0;
+    text-align: center;
+    z-index: 1;
+}
+
+header.masthead h1 {
+    font-size: 3rem;
+    line-height: 3rem;
+    color: #004A65;
+}
+
+header.masthead h2 {
+    font-size: 1.3rem;
+    font-family: 'Poppins';
+}
+
+@media (min-width: 992px) {
+    header.masthead {
+        padding-top: calc(6rem + 106px);
+        padding-bottom: 6rem;
+    }
+    header.masthead h1 {
+        font-size: 4.5em;
+        line-height: 4rem;
+    }
+    header.masthead h2 {
+        font-size: 1.75em;
+    }
+}
+
+h5,
+h6 {
+    color: #557E14;
+}
+
+h5 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+h6 {
+    font-size: 1.25rem;
+}
+
+.ribbon {
+    font-size: 18px !important;
+    line-height: 1.5em;
+    width: 50%;
+    height: 6em;
+    position: relative;
+    right: 0;
+    background: #D0F0FD;
+    color: #5C696F;
+    text-align: left;
+    padding: 1em 0em 1em 1em;
+    margin: 2em 5em 2em 0em;
+    ;
+}
+
+@media (min-width: 960px) {
+    .ribbon {
+        padding: .5em 1em;
+        margin: 3em;
+        line-height: 2.5em;
+        font-size: 18px !important;
+        width: 80%;
+    }
+}
+
+@media (max-width: 780px) {
+    .ribbon {
+        padding: .5em 1em .5em .5em;
+        width: 80%;
+        margin-top: 6em !important;
+        line-height: 1.75em;
+        font-size: 16px !important;
+    }
+}
+
+@media (max-width: 550px) {
+    .ribbon {
+        font-size: 14px !important;
+        line-height: 1.5em;
+    }
+}
+
+.ribbon:before {
+    content: "";
+    position: absolute;
+    display: block;
+    border: 3em solid #D0F0FD;
+    z-index: -1;
+}
+
+.ribbon:before {
+    left: -4em;
+    top: 0;
+    border-right-width: 1em;
+    border-left-color: transparent;
+}
+
+.ribbon .ribbon-content:before {
+    left: 0;
+    border-width: 1em 0 0 1em;
+}
+
+.non-semantic-protector {
+    position: relative;
+    z-index: 1;
+}
+
+
+/************** Agenda Section **************/
+
+#agenda h2 {
+    color: #BBE979
+}
+
+#agenda h3 {
+    color: beige;
+    /*#D0F0FD;*/
+}
+
+#agenda .col1 h4 {
+    display: inline;
+    text-align: right;
+    vertical-align: top;
+    padding: 0px 35px;
+}
+
+#agenda .col1 img {
+    display: inline;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    margin: 0px 10px;
+}
+
+#agenda .col2 .col2a {
+    text-align: right;
+    display: inline-block;
+    width: 30%;
+    padding-right: 20px;
+}
+
+#agenda .col2b {
+    display: inline-block;
+    width: 69%;
+    padding: 0px 40px;
+    vertical-align: top;
+}
+
+@media (max-width: 992px) {
+    #agenda .col1 {
+        width: 33%;
+        text-align: right;
+    }
+    #agenda .col1 img {
+        margin: 0px;
+        margin-right: 10px;
+        margin-left: -10px;
+        padding: 0px;
+    }
+    #agenda .col1 h4 {
+        padding-right: 0px;
+        display: block;
+    }
+    #agenda .col2 {
+        width: 66%;
+        float: right;
+    }
+    #agenda .col2 .col2a {
+        text-align: left;
+        display: block;
+        width: 100%;
+    }
+    #agenda .col2 .col2b {
+        display: block;
+        width: 100%;
+        padding-left: 0px;
+    }
+}
+
+#agenda hr {
+    border: .5px solid #BBE979;
+    width: 90%
+}
+
+
+/************** Registration Section **************/
+
+#registration {
+    background-color: #D0F0FD
+}
+
+#registration h2 {
+    color: #557E14 !important;
+}
+
+.floating-label-form-group {
+    position: relative;
+    border-bottom: 1px solid #D5DADC;
+}
+
+.floating-label-form-group :focus {
+    background-color: #E3F0FD;
+}
+
+.floating-label-form-group input,
+.floating-label-form-group textarea {
+    font-size: 1.25em;
+    z-index: 1;
+    padding-right: 10px;
+    padding-left: 10px;
+    resize: none;
+    border: none;
+    border-radius: 3px;
+    background-color: inherit;
+    box-shadow: none !important;
+}
+
+.floating-label-form-group label {
+    font-size: 0.85em;
+    line-height: 1.764705882em;
+    position: relative;
+    z-index: 0;
+    top: 2em;
+    display: block;
+    margin: 0;
+    -webkit-transition: top 0.3s ease, opacity 0.3s ease;
+    -moz-transition: top 0.3s ease, opacity 0.3s ease;
+    -ms-transition: top 0.3s ease, opacity 0.3s ease;
+    transition: top 0.3s ease, opacity 0.3s ease;
+    vertical-align: middle;
+    vertical-align: baseline;
+    opacity: 0;
+}
+
+.floating-label-form-group:not(:first-child) {
+    padding-left: 14px;
+    border-left: 1px solid #e9ecef;
+}
+
+.floating-label-form-group-with-value label {
+    top: 0;
+    opacity: 1;
+}
+
+.floating-label-form-group-with-focus label {
+    color: #D0F0FD;
+}
+
+form .row:first-child .floating-label-form-group {
+    border-top: 1px solid #e9ecef;
+}
+
+label {
+    color: darkgray;
+}
+
+.submit-btn {
+    padding: 1rem 1.75rem;
+    font-size: 1.25rem;
+    background-color: #BBE979;
+    /*#557E14*/
+}
+
+.submit-btn:hover,
+.submit-btn:focus,
+.submit-btn:active {
+    background-color: #557E14;
+    border-color: #557E14;
+    color: #D0F0FD!important;
+}
+
+
+/************** Footer Section **************/
+
+.footer {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    background-color: /*#D5DADC;*/
+    beige;
+    justify-content: center;
+}
+
+footer img {
+    padding: 0px 20px;
+    margin: 10px auto;
+    max-height: 45px;
+}
+
+@media (max-width: 768px) {
+    footer img {
+        padding: 0px 15px;
+        margin: 5px auto;
+        max-height: 30px;
+    }
+}
+
+
+/****************************/
